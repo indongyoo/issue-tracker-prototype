@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>이슈 트래커</title>
+  <script src="js/functional.js"></script>
+  <script src="js/$.js"></script>
+</head>
+<body>
+
+<div id="app">
+  <div class="page list">
+    <button type="button" class="create">
+      이슈 생성
+    </button>
+  </div>
+</div>
+
+<script>
+  const tmpl = _ => `
+    <div class="page editor">
+      <div class="container">
+        <div class="header">
+          <div class="options">
+            <button type="button" class="cancel">취소</button>
+            <button type="button" class="save">저장</button>
+          </div>
+        </div>
+        <div class="body">
+          <div class="name"><input type="text" class="name"></div>
+          <div class="description"><textarea name="description"></textarea></div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  $.val = el => el.value;
+
+  $.addEvent($('.create'), 'click', pipe(
+    tmpl,
+    $.el,
+    $.append($('body')),
+    $.on('click', '.options .save', function(e) {
+      console.log('나 이제 저장할래~~', {
+        name: go(e.delegateTarget, $.find('.name input'), $.val),
+        description: go(e.delegateTarget, $.find('.description textarea'), $.val)
+      });
+    })
+  ));
+
+</script>
+
+</body>
+</html>
