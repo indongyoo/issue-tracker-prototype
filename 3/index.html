@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>이슈 트래커</title>
+  <script src="js/functional.js"></script>
+  <script src="js/$.js"></script>
+  <script src="js/Task.js"></script>
+  <script src="js/Task.editor.js"></script>
+  <script src="js/Task.list.js"></script>
+</head>
+<body>
+
+<div id="app">
+  <div class="page list">
+    <div class="container">
+      <div class="options">
+        <button type="button" class="create">생성</button>
+      </div>
+      <div class="body">
+        <ul class="task_list"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Task.list.init($('.page.list'));
+</script>
+
+</body>
+</html>
