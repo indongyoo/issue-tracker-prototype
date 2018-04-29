@@ -13,16 +13,21 @@
 ### 1회
  - [방송보기](https://www.youtube.com/watch?v=3SEQdmF9psY)
  - [코드보기](https://github.com/indongyoo/issue-tracker-prototype/tree/master/1)
- - 이슈 트래커 앱을 만들면서 $, $.find, $.findAll, $.el, $.append, $.on 등을 만들게 되었고, querySelector, createElement, appendChild, addEventListener 등에 대해 다루었습니다.
- - 명령형 코드들을 리팩토링 하는 과정에서 go, pipe, reduce, curry2, find 등이 만들어졌고, for...of, 전개 연산자, 나머지 연산자 등을 다루었습니다.
+ - 이슈 트래커 앱을 만들면서 $, $.find, $.findAll, $.el, $.append, $.on 등을 만들게 되었고, querySelector, createElement, appendChild, addEventListener 등에 대해 다룸.
+ - 명령형 코드들을 리팩토링 하는 과정에서 go, pipe, reduce, curry2, find 등이 만들어졌고, for...of, 전개 연산자, 나머지 연산자 등을 다룸.
 
 ### 2회
  - [방송보기](https://www.youtube.com/watch?v=fWCzkdbs-sw)
  - [코드보기](https://github.com/indongyoo/issue-tracker-prototype/tree/master/2)
- - 델리게이트 방식으로 이벤트를 등록할 수 있도록 돕는 함수인 $.on을 리팩토링했습니다.
- - reduce 다형성을 높이고 map, extend, defaults 등의 함수을 만들었습니다.
- - generator/iterator 등에 대한 이야기를 가볍게 다루었습니다.
+ - 델리게이트 방식으로 이벤트를 등록할 수 있도록 돕는 함수인 $.on을 리팩토링.
+ - reduce 다형성을 높이고 map, extend, defaults 등의 함수을 만듬.
+ - generator/iterator 등에 대한 이야기를 가볍게 다룸.
 
-
-
-
+### 3회
+ - [방송보기](https://www.youtube.com/watch?v=57q407uCArA)
+ - [코드보기](https://github.com/indongyoo/issue-tracker-prototype/tree/master/3)
+ - DOM을 통해 데이터를 뽑는 코드를 리팩토링하여 $.formToJSON, $.toJSON 등의 함수 생성.
+ - Task.list, Task.editor 로 모듈화.
+ - reduce가 Promise를 제어하도록하여, go, pipe가 Promise를 만나도 동기적으로 동작하도록 수정.
+ - $.closest, $.outerHTML 등 생성.
+ - 태스크 생성, 완료, 수정 등의 기능 완성.
