@@ -24,7 +24,7 @@
  - generator/iterator 등에 대한 이야기를 가볍게 다룸.
 
 ### 3회
- - [방송보기](https://www.youtube.com/watch?v=57q407uCArA)
+ - [방송보기](https://youtu.be/57q407uCArA?t=740)
  - [코드보기](https://github.com/indongyoo/issue-tracker-prototype/tree/master/3)
  - DOM을 통해 데이터를 뽑는 코드를 리팩토링하여 $.formToJSON, $.toJSON 등의 함수 생성.
  - Task.list, Task.editor 로 모듈화.
